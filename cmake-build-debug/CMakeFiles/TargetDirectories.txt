@@ -1,0 +1,4 @@
+/Users/duxin/code/C/cmake-build-debug/CMakeFiles/C-add.dir
+/Users/duxin/code/C/cmake-build-debug/CMakeFiles/C-main.dir
+/Users/duxin/code/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/duxin/code/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
