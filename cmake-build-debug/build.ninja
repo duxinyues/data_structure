@@ -41,66 +41,66 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/duxin/code/C/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target C-add
+# Object build statements for EXECUTABLE target add
 
 
 #############################################
-# Order-only phony target for C-add
+# Order-only phony target for add
 
-build cmake_object_order_depends_target_C-add: phony || CMakeFiles/C-add.dir
+build cmake_object_order_depends_target_add: phony || CMakeFiles/add.dir
 
-build CMakeFiles/C-add.dir/add.c.o: C_COMPILER__C-add_unscanned_Debug /Users/duxin/code/C/add.c || cmake_object_order_depends_target_C-add
-  DEP_FILE = CMakeFiles/C-add.dir/add.c.o.d
+build CMakeFiles/add.dir/src/add.c.o: C_COMPILER__add_unscanned_Debug /Users/duxin/code/C/src/add.c || cmake_object_order_depends_target_add
+  DEP_FILE = CMakeFiles/add.dir/src/add.c.o.d
   FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/C-add.dir
-  OBJECT_FILE_DIR = CMakeFiles/C-add.dir
+  OBJECT_DIR = CMakeFiles/add.dir
+  OBJECT_FILE_DIR = CMakeFiles/add.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target C-add
+# Link build statements for EXECUTABLE target add
 
 
 #############################################
-# Link the executable C-add
+# Link the executable add
 
-build C-add: C_EXECUTABLE_LINKER__C-add_Debug CMakeFiles/C-add.dir/add.c.o
+build add: C_EXECUTABLE_LINKER__add_Debug CMakeFiles/add.dir/src/add.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
-  OBJECT_DIR = CMakeFiles/C-add.dir
+  OBJECT_DIR = CMakeFiles/add.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = C-add
-  TARGET_PDB = C-add.dbg
+  TARGET_FILE = add
+  TARGET_PDB = add.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target C-main
+# Object build statements for EXECUTABLE target main
 
 
 #############################################
-# Order-only phony target for C-main
+# Order-only phony target for main
 
-build cmake_object_order_depends_target_C-main: phony || CMakeFiles/C-main.dir
+build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
-build CMakeFiles/C-main.dir/main.c.o: C_COMPILER__C-main_unscanned_Debug /Users/duxin/code/C/main.c || cmake_object_order_depends_target_C-main
-  DEP_FILE = CMakeFiles/C-main.dir/main.c.o.d
+build CMakeFiles/main.dir/src/main.c.o: C_COMPILER__main_unscanned_Debug /Users/duxin/code/C/src/main.c || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/main.c.o.d
   FLAGS = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/C-main.dir
-  OBJECT_FILE_DIR = CMakeFiles/C-main.dir
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target C-main
+# Link build statements for EXECUTABLE target main
 
 
 #############################################
-# Link the executable C-main
+# Link the executable main
 
-build C-main: C_EXECUTABLE_LINKER__C-main_Debug CMakeFiles/C-main.dir/main.c.o
+build main: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk
-  OBJECT_DIR = CMakeFiles/C-main.dir
+  OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = C-main
-  TARGET_PDB = C-main.dbg
+  TARGET_FILE = main
+  TARGET_PDB = main.dbg
 
 
 #############################################
@@ -136,7 +136,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/duxin/code/C/cmake-build-debug
 
-build all: phony C-add C-main
+build all: phony add main
 
 # =============================================================================
 # Built-in targets
